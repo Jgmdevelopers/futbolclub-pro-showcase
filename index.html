@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07121b">
+  <meta name="description" content="FútbolClub Pro: plataforma en desarrollo para gestionar clubes deportivos, jugadores, convocatorias, eventos y asistencia. Proyecto Laravel de Gabriel Molina.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FútbolClub Pro — Gestión deportiva inteligente">
+  <meta property="og:description" content="Un producto propio para organizar clubes, categorías, jugadores, eventos y convocatorias. Conocé su evolución técnica.">
+  <meta property="og:locale" content="es_AR">
+  <title>FútbolClub Pro | Gestión deportiva para clubes y escuelas</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a href="#contenido" class="skip">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="FútbolClub Pro, volver al inicio">
+        <span class="brand-mark" aria-hidden="true">FC</span>
+        <span>FútbolClub <span class="brand-accent">Pro</span></span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#producto">Producto</a>
+        <a href="#ingenieria">Ingeniería</a>
+        <a href="#evolucion">Evolución</a>
+      </nav>
+      <a class="header-cta" href="https://github.com/Jgmdevelopers/futbolclub-pro-showcase" rel="noopener noreferrer">Ver en GitHub <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="status-pill"><span class="dot" aria-hidden="true"></span> Proyecto propio · MVP en evolución</span>
+          <h1 id="hero-title">Más tiempo para el juego. <em>Menos tareas dispersas.</em></h1>
+          <p class="hero-lede">
+            Una plataforma pensada para que clubes, escuelas y entrenadores organicen
+            jugadores, actividades, convocatorias y asistencia en un mismo lugar.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-main" href="#producto">Conocer el producto <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-outline" href="#demostracion">Ver vista ilustrativa <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note" aria-label="Características del proyecto">
+            <span>Arquitectura multi-club</span>
+            <span>Laravel + Livewire</span>
+            <span>Testing automatizado</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" id="demostracion">
+          <div class="pitch-ring" aria-hidden="true"></div>
+          <div class="dashboard" role="img" aria-label="Interfaz conceptual con datos ficticios: un panel de club demostración con categorías, jugadores y próximos eventos. No es una captura real del producto.">
+            <div class="dashboard-top">
+              <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+              <span class="demo-tag">Vista conceptual · no es una captura real</span>
+            </div>
+            <div class="dash-body">
+              <aside class="dash-side" aria-hidden="true">
+                <div class="side-logo">FC</div>
+                <div class="side-tab active">Inicio</div>
+                <div class="side-tab">Club</div>
+                <div class="side-tab">Plantel</div>
+                <div class="side-tab">Agenda</div>
+              </aside>
+              <div class="dash-main">
+                <div class="dash-heading">
+                  <div><strong>Panel del club</strong><small>Club de demostración</small></div>
+                  <div class="mock-avatar" aria-hidden="true">FC</div>
+                </div>
+                <div class="dash-metrics" aria-hidden="true">
+                  <div class="mini-stat"><small>Categorías</small><b>08</b></div>
+                  <div class="mini-stat"><small>Jugadores</small><b>24</b></div>
+                  <div class="mini-stat"><small>Actividades</small><b class="accent">03</b></div>
+                </div>
+                <div class="dash-list" aria-hidden="true">
+                  <div class="dash-list-top"><strong>Agenda ilustrativa</strong><span>Esta semana</span></div>
+                  <div class="dash-event">
+                    <div class="dash-event-main">
+                      <span class="event-icon">●</span>
+                      <div><strong>Entrenamiento</strong><small>Categoría de demostración</small></div>
+                    </div>
+                    <span class="event-status">Próximo</span>
+                  </div>
+                  <div class="dash-event">
+                    <div class="dash-event-main">
+                      <span class="event-icon gold">★</span>
+                      <div><strong>Partido amistoso</strong><small>Convocatorias abiertas</small></div>
+                    </div>
+                    <span class="event-status alt">Pendiente</span>
+                  </div>
+                  <div class="dash-event">
+                    <div class="dash-event-main">
+                      <span class="event-icon">✓</span>
+                      <div><strong>Registro de asistencia</strong><small>Seguimiento deportivo</small></div>
+                    </div>
+                    <span class="event-status">Activo</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="visual-caption">Diseño ilustrativo con información inventada. No muestra datos reales ni el código privado.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="stats-band" aria-label="Indicadores técnicos">
+      <div class="container stats-grid">
+        <div class="stat-unit"><b>408</b><span>Pruebas aprobadas en una ejecución local¹</span></div>
+        <div class="stat-unit"><b>3 versiones</b><span>PHP 8.2, 8.3 y 8.4 validados en CI²</span></div>
+        <div class="stat-unit"><b>Multi-club</b><span>Separación de datos por institución</span></div>
+      </div>
+    </div>
+
+    <section class="content-section" id="producto" aria-labelledby="producto-title">
+      <div class="container">
+        <span class="eyebrow">El producto</span>
+        <h2 class="section-title" id="producto-title">Todo lo que pasa en un club, mejor organizado.</h2>
+        <p class="section-lede">FútbolClub Pro reúne procesos que suelen repartirse entre planillas, mensajes y anotaciones. Su núcleo funcional ya tiene desarrollo propio y continúa evolucionando.</p>
+        <div class="feature-grid">
+          <article class="feature-card"><div class="feature-icon" aria-hidden="true">▦</div><h3>Clubes y categorías</h3><p>Organización de clubes, sedes y categorías, con usuarios vinculados a cada institución.</p></article>
+          <article class="feature-card"><div class="feature-icon" aria-hidden="true">♧</div><h3>Plantel y jugadores</h3><p>Fichas deportivas, datos de contacto y responsables familiares con controles de acceso.</p></article>
+          <article class="feature-card"><div class="feature-icon" aria-hidden="true">▤</div><h3>Agenda deportiva</h3><p>Entrenamientos, partidos y reuniones con estados, filtros y reglas de transición.</p></article>
+          <article class="feature-card"><div class="feature-icon" aria-hidden="true">↗</div><h3>Convocatorias</h3><p>Invitaciones a actividades, seguimiento de respuestas y enlaces individuales RSVP.</p></article>
+          <article class="feature-card"><div class="feature-icon" aria-hidden="true">✓</div><h3>Asistencia y rendimiento</h3><p>Registro de presentes y estadísticas diferenciadas para entrenamientos y partidos.</p></article>
+          <article class="feature-card"><div class="feature-icon" aria-hidden="true">◇</div><h3>Trabajo colaborativo</h3><p>Personal vinculado a los clubes, invitaciones de acceso y permisos según funciones.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section engineering-section" id="ingenieria" aria-labelledby="ingenieria-title">
+      <div class="container engineering-grid">
+        <div>
+          <span class="eyebrow">Ingeniería de software</span>
+          <h2 class="section-title" id="ingenieria-title">Un producto construido con criterio técnico.</h2>
+          <p class="section-lede">Más allá de la interfaz, el desarrollo prioriza la seguridad de los accesos, la consistencia de los datos y la posibilidad de mantener y ampliar la aplicación.</p>
+          <div class="engineering-points">
+            <div class="engineering-point"><span class="check" aria-hidden="true">✓</span><span>Autorización mediante Policies y roles.</span></div>
+            <div class="engineering-point"><span class="check" aria-hidden="true">✓</span><span>Pruebas específicas de aislamiento entre clubes.</span></div>
+            <div class="engineering-point"><span class="check" aria-hidden="true">✓</span><span>Validaciones de negocio y operaciones transaccionales.</span></div>
+            <div class="engineering-point"><span class="check" aria-hidden="true">✓</span><span>Integración continua con GitHub Actions sobre la rama principal.</span></div>
+          </div>
+          <div class="tech-stack" aria-label="Tecnologías utilizadas">
+            <span>PHP</span><span>Laravel 12</span><span>Livewire 3</span><span>Blade</span><span>MySQL / SQLite</span><span>PHPUnit</span><span>Vite</span><span>Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="quality-card" aria-label="Resultados de validación técnica">
+          <div class="quality-top"><strong>Validación continua</strong><span>GitHub Actions · 29 oct 2026</span></div>
+          <div class="quality-rows">
+            <div class="quality-row"><span>Suite automatizada · PHP 8.2</span><span class="pass">✓ Aprobada</span></div>
+            <div class="quality-row"><span>Suite automatizada · PHP 8.3</span><span class="pass">✓ Aprobada</span></div>
+            <div class="quality-row"><span>Suite automatizada · PHP 8.4</span><span class="pass">✓ Aprobada</span></div>
+            <div class="quality-row"><span>Pruebas locales¹</span><span class="pass">408 aprobadas</span></div>
+            <div class="quality-row"><span>Aserciones locales¹</span><span class="pass">1.270</span></div>
+          </div>
+          <div class="quality-foot">¹ Resultado registrado en una ejecución local del 29/10/2026. ² La ejecución de CI en <em>main</em> del mismo día aprobó en las tres versiones de PHP. Son mediciones diferentes; no representan una garantía de funcionamiento sin errores.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="evolucion" aria-labelledby="evolucion-title">
+      <div class="container">
+        <span class="eyebrow">Hoja de ruta</span>
+        <h2 class="section-title" id="evolucion-title">Un proyecto real, en evolución.</h2>
+        <p class="section-lede">El foco está puesto en consolidar el núcleo deportivo, mejorar la experiencia de los usuarios y validar cada avance antes de mostrarlo públicamente.</p>
+        <div class="roadmap-grid">
+          <article class="roadmap-card current"><small>Desarrollado</small><h3>Núcleo deportivo</h3><p>Clubes, planteles, eventos, convocatorias, asistencia y gestión de personal con reglas de autorización.</p></article>
+          <article class="roadmap-card next"><small>Mejora continua</small><h3>Privacidad y experiencia</h3><p>Fortalecimiento de controles sobre datos personales, nuevas pruebas y mejoras de uso para entrenadores y administradores.</p></article>
+          <article class="roadmap-card"><small>En planificación</small><h3>Módulos complementarios</h3><p>Cuotas, cobros y otras herramientas de gestión. No se presentan como funcionalidades operativas.</p></article>
+        </div>
+        <div class="privacy-note">
+          <span class="shield" aria-hidden="true">⬡</span>
+          <div><strong>Privacidad desde el diseño</strong><p>El código fuente de FútbolClub Pro se mantiene privado. Esta página no contiene datos personales, fotografías de jugadores, claves de acceso, configuraciones internas ni algoritmos propios. La interfaz ilustrativa utiliza cifras y nombres genéricos ficticios.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-labelledby="contacto-title">
+      <div class="container">
+        <div class="cta-panel">
+          <div>
+            <span class="eyebrow no-line">Proyecto y trayectoria</span>
+            <h2 id="contacto-title">Desarrollando tecnología útil para el deporte.</h2>
+            <p>Un proyecto de Gabriel Molina, Técnico Superior en Programación y desarrollador backend especializado en PHP y Laravel.</p>
+          </div>
+          <a class="btn btn-main" href="https://www.linkedin.com/in/gabriel-molina-ush/" rel="noopener noreferrer">Conectar en LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 FútbolClub Pro · Proyecto experimental, sin disponibilidad comercial anunciada.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Jgmdevelopers/futbolclub-pro-showcase">Repositorio público</a>
+        <a href="https://github.com/Jgmdevelopers">Gabriel Molina en GitHub</a>
+        <a href="#inicio">Volver arriba ↑</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
