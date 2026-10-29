@@ -32,7 +32,13 @@ El proyecto utiliza un contexto de club activo y políticas de autorización par
 
 ### Calidad y pruebas
 
-Incluye pruebas automatizadas con PHPUnit para autenticación, permisos, aislamiento de datos, gestión de eventos, convocatorias y asistencia. En una ejecución **local** realizada el 29 de octubre de 2026 se registraron **408 pruebas aprobadas y 1.270 aserciones** (captura de consola). Esta validación corresponde a la rama de trabajo local y no reemplaza la ejecución de integración continua sobre `main`, todavía pendiente de confirmar.
+Incluye pruebas automatizadas con PHPUnit para autenticación, permisos, aislamiento de datos, gestión de eventos, convocatorias y asistencia. En una ejecución **local** realizada el 29 de octubre de 2026 se registraron **408 pruebas aprobadas y 1.270 aserciones** (captura de consola). Estas cifras corresponden a esa ejecución local, no a la cantidad de pruebas del entorno de GitHub Actions.
+
+### Integración continua (CI)
+
+El **29 de octubre de 2026**, GitHub Actions ejecutó satisfactoriamente la suite automatizada sobre la rama principal `main` en **PHP 8.2, 8.3 y 8.4**. El flujo prepara el entorno PHP, instala dependencias con Composer, compila los recursos frontend con Vite y ejecuta `php artisan test`.
+
+Este control se activa automáticamente al incorporar cambios en `main` y también se utiliza para revisar Pull Requests. Los resultados de CI corresponden al código disponible en el momento de cada ejecución; no garantizan ausencia de errores.
 
 ### Desarrollo incremental
 
@@ -51,7 +57,7 @@ El trabajo se organiza en módulos y mejoras progresivas, con atención a la val
 
 El producto continúa en desarrollo. Los módulos económicos, como cuotas, cobros e integraciones de pago, **no se presentan como funciones operativas** en este momento.
 
-Los próximos objetivos incluyen reforzar la automatización de pruebas, revisar los controles de privacidad y continuar mejorando la experiencia de entrenadores y administradores.
+Los próximos objetivos incluyen continuar ampliando las pruebas y su automatización, revisar los controles de privacidad y seguir mejorando la experiencia de entrenadores y administradores.
 
 ## Código fuente y privacidad
 
